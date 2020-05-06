@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row header-content text-center justify-content-center">
+                <a href="deskripsi.html" class="back-button-header"><i class="fas fa-chevron-left"></i></a>
+                <div class="col-lg-7 col-md-8 col-sm-10 d-flex flex-row justify-content-center align-items-center">
+                    <div class="header-icon">
+                        <img id="icon-deskripsi" class="mb-1" src="assets/img/deskripsi-on.svg" alt="Paper">
+                        <p>Deskripsi</p>
+                    </div>
+                    <span class="line"></span>
+                    <div class="header-icon">
+                        <img id="icon-donasi" class="mb-1" src="assets/img/donasi-on.svg" alt="Hands and heart" >
+                        <p>Donasi</p>
+                    </div>
+                    <span class="line disabled"></span>
+                    <div class="header-icon disabled">
+                        <img id="icon-selesai" class="mb-1" src="assets/img/selesai-off.svg" alt="Check sign" >
+                        <p>Selesai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid donation">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-7 col-md-9 col-sm-10">
+
+                <form action="selesai.html" id="donation_form" method="GET"></form>
+
+                <div class="card custom-shadow mb-5">
+                    <div class="card-body p-sm-5 p-3">
+                        <h2 class="card-title">Mari bantu Dewi, Bocah 10 tahun berprestasi yang putus sekolah</h2>
+                        <div class="d-flex flex-row mt-5 text-left">
+                            <label for="amount" id="label-amount" form="donation_form">Rp </label>
+                            <input type="number" name="amount" id="amount" form="donation_form">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-sm-5 text-left mb-5 custom-shadow p-3">
+                    <div class="card-body">
+                        <div class="d-flex flex-column mb-3">
+                            <label for="first_name" form="donation_form">Nama Depan</label>
+                            <input type="text" name="first_name" id="first_name" form="donation_form">
+                        </div>
+                        <div class="d-flex flex-column mb-3">
+                            <label for="last_name" form="donation_form">Nama Belakang</label>
+                            <input type="text" name="last_name" id="last_name" form="donation_form">
+                        </div>
+                        <div class="d-flex flex-column mb-3">
+                            <label for="email" form="donation_form">Alamat Email</label>
+                            <input type="email" name="email" id="email" form="donation_form">
+                        </div>
+                        <div class="d-flex flex-column mb-3">
+                            <label for="phone" form="donation_form">No. Telp</label>
+                            <input type="text" name="phone" id="phone" form="donation_form">
+                        </div>
+                        <div class="d-flex flex-column mb-3">
+                            <label for="country" form="donation_form">Negara</label>
+                            <input type="text" name="country" id="country" form="donation_form">
+                        </div>
+                        <div class="d-flex flex-column mb-3">
+                            <label for="remarks" form="donation_form">Catatan</label>
+                            <textarea name="remarks" id="remarks" cols="30" rows="5" form="donation_form"></textarea>
+                        </div>
+                        <div class="">
+                            <input type="checkbox" name="is_anonymous" id="is_anonymous" form="donation_form">
+                            <label for="is_anonymous" form="donation_form" class="noselect">Tampilkan sebagai donatur Anonim</label>
+                        </div>
+                    </div>
+                </div><!-- /card -->
+
+                <div class="card p-3 p-sm-5 text-left">
+                    <div class="card-body">
+                        <div class="d-flex flex-column mb-3">
+                            <label for="payment_method" form="donation_form" form="donation_form">Metode Pembayaran</label>
+                            <select name="payment_method" id="payment_method" form="donation_form">
+                                <option value="">-- Pilih metode pembayaran --</option>
+                                <option value="method_1">Method 1</option>
+                                <option value="method_2">Method 2</option>
+                                <option value="method_3">Method 3</option>
+                                <option value="method_4">Method 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div><!-- /card -->
+                <button class="btn btn-primary btn-block btn-lg custom-shadow" type="submit" form="donation_form">Lanjut Pembayaran</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center">
+        <p>Powered by</p>
+        <img class="hybrid-logo" src="assets/img/hybrid-17.svg" alt="Hybird logo">
+        <p><a href="https://www.hybridbooking.com/">www.hybridbooking.com</a></p>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
